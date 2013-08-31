@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="20px">
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schoLogo"
+            android:layout_marginTop="6px"
+            android:src="@drawable/scho_logo_new"
+            android:layout_gravity="left"
+            />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="50 Opportunities for Teaching – June 2013 -Selection List"
+            android:id="@+id/schoName"
+            android:textColor="#5a5a5a"
+            android:textSize="20dp"
+            android:layout_marginLeft="30px"
+            />
+
+    <TableLayout
+            android:id="@+id/tblDocuments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_below="@+id/schoName"
+            android:layout_marginLeft="70px"
+
+            android:layout_marginTop="10px"
+            android:layout_centerHorizontal="true"></TableLayout>
+
+
+</RelativeLayout>

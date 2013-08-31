@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:padding="13px">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="50 Opportunities for Teaching – June 2013 -Selection List"
+            android:id="@+id/schoName"
+            android:textColor="#7b7b7b"
+            android:textSize="16dp"
+            android:autoLink="web"
+            android:layout_marginLeft="60px"
+            />
+
+
+</FrameLayout>
