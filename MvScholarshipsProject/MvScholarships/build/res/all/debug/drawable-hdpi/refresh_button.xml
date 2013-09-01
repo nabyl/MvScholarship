@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/square_red_light" android:state_pressed="true"/>
     <item android:drawable="@drawable/refresh"/>
 
-</selector><!-- From: file:/C:/Users/ynabyl/Desktop/MvScholarshipsProject/MvScholarships/src/main/res/drawable-hdpi/refresh_button.xml -->
+</selector><!-- From: file:/C:/Users/ynabyl/Documents/GitHub/mv-scholarship/MvScholarshipsProject/MvScholarships/src/main/res/drawable-hdpi/refresh_button.xml -->

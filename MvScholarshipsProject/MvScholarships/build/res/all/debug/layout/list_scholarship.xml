@@ -22,7 +22,8 @@
                 android:fontFamily=""
                 android:textColor="#ffffff"
 
-                android:textSize="29dp"
+                android:textSize="28dp"
+                android:layout_marginTop="13px"
                 android:layout_gravity="left|top"/>
 
 
@@ -51,4 +52,4 @@
     </LinearLayout>
 
 
-</LinearLayout><!-- From: file:/C:/Users/ynabyl/Desktop/MvScholarshipsProject/MvScholarships/src/main/res/layout/list_scholarship.xml -->
+</LinearLayout><!-- From: file:/C:/Users/ynabyl/Documents/GitHub/mv-scholarship/MvScholarshipsProject/MvScholarships/src/main/res/layout/list_scholarship.xml -->

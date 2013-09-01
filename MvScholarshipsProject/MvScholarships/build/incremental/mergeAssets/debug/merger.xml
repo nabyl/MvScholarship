@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Users\ynabyl\Desktop\MvScholarshipsProject\MvScholarships\src\main\assets" />
+        <source path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\ynabyl\Desktop\MvScholarshipsProject\MvScholarships\src\debug\assets" />
+        <source path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\debug\assets" />
     </dataSet>
 
 </merger>

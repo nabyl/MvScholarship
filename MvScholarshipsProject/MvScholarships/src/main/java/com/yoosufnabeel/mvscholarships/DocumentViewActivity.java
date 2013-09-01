@@ -20,6 +20,9 @@ import java.util.ArrayList;
 
 public class DocumentViewActivity extends Activity {
 
+    //created by nabeel:
+    //date: 30th August 2013
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
