@@ -7,7 +7,6 @@ import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -70,7 +69,7 @@ public abstract class AbstractListViewActivity extends ListActivity {
                     String title = Html.fromHtml(jsonPage.getString("Title")).toString();
                     //JSONObject jsonPage =jsonPage.getJSONObject("Links");
 
-                    Scholarship schor = new Scholarship(R.drawable.scho_logo_new, title);
+                    Scholarship schor = new Scholarship(R.drawable.attachment, title);
                     JSONArray links = jsonPage.getJSONArray("Links");
 
                     for (int j = 0; j < links.length(); ++j)
@@ -98,7 +97,7 @@ public abstract class AbstractListViewActivity extends ListActivity {
         protected void onPostExecute(String result) {
             ScholarshipAdapter customArrayAdapter = ((ScholarshipAdapter) getListAdapter());
             for (Scholarship value : newData) {
-                customArrayAdapter.add(new Scholarship(R.drawable.scho_logo_new, value.name, value.documents));
+                customArrayAdapter.add(new Scholarship(R.drawable.attachment, value.name, value.documents));
             }
             customArrayAdapter.notifyDataSetChanged();
 

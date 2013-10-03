@@ -1,21 +1,38 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-        android:background="#f6f6f6"
-        android:padding="13px">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:orientation="vertical"
 
-    <TextView
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/schoDocumentLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="50 Opportunities for Teaching – June 2013 -Selection List"
-            android:id="@+id/schoName"
-            android:textColor="#7b7b7b"
-            android:textSize="16dp"
-            android:autoLink="web"
-            android:layout_marginLeft="60px"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/attachment"
             />
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
 
+
+        <TextView
+            android:id="@+id/documentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="50 Opportunities for Teaching – June 2013 -Selection List"
+            android:textColor="#7b7b7b"
+            android:textSize="16dp" />
+        </TableRow>
+    </LinearLayout>
 
 </FrameLayout>

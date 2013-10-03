@@ -5,15 +5,16 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -25,7 +26,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import android.content.Intent;
 
 
 public class EndlessListViewActivity extends AbstractListViewActivity  {
@@ -41,16 +41,16 @@ public class EndlessListViewActivity extends AbstractListViewActivity  {
         setContentView(R.layout.list_scholarship);
 
 
-        btnRefresh = (ImageView)findViewById(R.id.btnRefresh);
-        btnRefresh.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent newIntent = new Intent(EndlessListViewActivity.this,  EndlessListViewActivity.class);
-                startActivity(newIntent);
-                finish();
-            }
-        });
+//        btnRefresh = (ImageView)findViewById(R.id.btnRefresh);
+//        btnRefresh.setOnClickListener( new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent newIntent = new Intent(EndlessListViewActivity.this,  EndlessListViewActivity.class);
+//                startActivity(newIntent);
+//                finish();
+//            }
+//        });
 
         if (!isOnline()) {
 
@@ -81,6 +81,29 @@ public class EndlessListViewActivity extends AbstractListViewActivity  {
 
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.list_scholarship, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == R.id.refresh) {
+
+            Intent intent = new Intent();
+            intent.setClass(this, EndlessListViewActivity.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
     public boolean isOnline() {
         try {
@@ -119,7 +142,7 @@ public class EndlessListViewActivity extends AbstractListViewActivity  {
                     JSONObject jsonPage = rec.getJSONObject("Scholarship");
                     String title = Html.fromHtml(jsonPage.getString("Title")).toString();
 
-                    Scholarship schor = new Scholarship(R.drawable.scho_logo_new, title);
+                    Scholarship schor = new Scholarship(R.drawable.attachment, title);
 
                     JSONArray links = jsonPage.getJSONArray("Links");
 

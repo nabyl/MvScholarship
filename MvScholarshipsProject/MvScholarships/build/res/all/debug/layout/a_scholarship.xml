@@ -1,65 +1,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+>
 
-             android:padding="20px">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="#ffffff"
 
-    <LinearLayout
-            android:layout_width="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left|top">
+            android:layout_gravity="left|top"
+            >
 
-        <TableLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent">
 
-            <TableRow
+                <ImageView
+                    android:id="@+id/schoDocumentLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/schorlarship"
+                    />
+
+                <TableRow
+                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content">
 
 
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/schoLogo"
-                        android:layout_marginTop="6px"
-                        android:src="@drawable/scho_logo_new"
-
-
-                        />
-
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="50 Opportunities for Teaching – June 2013 -Selection List"
+                    <TextView
                         android:id="@+id/schoName"
-                        android:textColor="#5a5a5a"
-                        android:paddingLeft="10px"
-                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="50 Opportunities for Teaching – June 2013 -Selection List"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ff807e7e"
 
-                        android:layout_gravity="center_horizontal|top"/>
+                        android:textSize="16dp" />
 
-            </TableRow>
+                </TableRow>
 
-        </TableLayout>
+            </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left|bottom">
 
-        <TableLayout
+            <TableLayout
                 android:id="@+id/tblDocuments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left|bottom"
                 android:layout_below="@+id/schoName"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="20px"></TableLayout>
-    </LinearLayout>
-
+                android:layout_gravity="left|bottom"
+                android:layout_marginTop="6dp"></TableLayout>
+        </LinearLayout>
+    </TableLayout>
 </LinearLayout><!-- From: file:/C:/Users/ynabyl/Documents/GitHub/mv-scholarship/MvScholarshipsProject/MvScholarships/src/main/res/layout/a_scholarship.xml -->

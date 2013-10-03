@@ -4,50 +4,23 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#FFFFFF">
+        android:background="#f0f0f0">
 
-    <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|top"
-            android:padding="16px"
-            android:background="#E74C3C">
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/app_name"
-                android:id="@+id/appTitle"
-                android:fontFamily=""
-                android:textColor="#ffffff"
-
-                android:textSize="28dp"
-                android:layout_marginTop="13px"
-                android:layout_gravity="left|top"/>
-
-
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnRefresh"
-
-                android:src="@drawable/refresh_button"
-
-                android:layout_gravity="right|center_vertical"/>
-
-    </FrameLayout>
 
     <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
             >
 
         <ListView
-                android:id="@+id/@android:id/list"
+                android:id="@android:id/list"
                 android:layout_width="fill_parent"
+            android:dividerHeight="0dp"
+            android:divider="@android:color/white"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
 

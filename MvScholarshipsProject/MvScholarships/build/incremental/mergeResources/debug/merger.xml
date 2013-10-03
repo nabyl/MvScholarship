@@ -4,6 +4,11 @@
     <dataSet config="main" >
         <source path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res" >
             <file
+                name="attachment"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-hdpi\attachment.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi"
@@ -19,6 +24,11 @@
                 qualifiers="hdpi"
                 type="drawable" />
             <file
+                name="schorlarship"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-hdpi\schorlarship.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
                 name="scho_logo_new"
                 path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-hdpi\scho_logo_new.png"
                 qualifiers="hdpi"
@@ -29,9 +39,24 @@
                 qualifiers="hdpi"
                 type="drawable" />
             <file
+                name="attachment"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-mdpi\attachment.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-mdpi\ic_launcher.png"
                 qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="schorlarship"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-mdpi\schorlarship.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="attachment"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xhdpi\attachment.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
@@ -39,8 +64,23 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="schorlarship"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xhdpi\schorlarship.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="attachment"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xxhdpi\attachment.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="schorlarship"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xxhdpi\schorlarship.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
@@ -69,8 +109,8 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="test"
-                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\menu\test.xml"
+                name="list_scholarship"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\menu\list_scholarship.xml"
                 qualifiers=""
                 type="menu" />
             <file
@@ -89,7 +129,7 @@
                 </string>
                 <string name="title_activity_document_view" >Document
                 </string>
-                <string name="app_name" >MV Scholarships
+                <string name="app_name" >Maldives Scholarships
                 </string>
                 <string name="hello_world" ></string>
             </file>
@@ -99,7 +139,7 @@
 
                 <style
                     name="AppBaseTheme"
-                    parent="android:Theme.Light" >
+                    parent="android:Theme.Holo.Light" >
 
                     <!--
             Theme customizations available in newer API levels can go in
@@ -109,10 +149,30 @@
                 </style>
 
                 <style
+                    name="Theme.MyAppTheme.ActionBar.TitleTextStyle"
+                    parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title" >
+                    <item name="android:textColor">
+#FFFFFF
+                    </item>
+                </style>
+
+                <style
+                    name="MyActionBar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+#bf2525
+                    </item>
+                    <item name="android:titleTextStyle">
+@style/Theme.MyAppTheme.ActionBar.TitleTextStyle
+                    </item>
+                </style>
+
+                <style
                     name="AppTheme"
                     parent="AppBaseTheme" >
-
-                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                    <item name="android:actionBarStyle">
+@style/MyActionBar
+                    </item>
                 </style>
             </file>
             <file
@@ -148,6 +208,21 @@
                 path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\xml\document_selector_color.xml"
                 qualifiers=""
                 type="xml" />
+            <file
+                name="refresh"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xhdpi\refresh.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="refresh"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-xxhdpi\refresh.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="refresh"
+                path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\src\main\res\drawable-mdpi\refresh.png"
+                qualifiers="mdpi"
+                type="drawable" />
         </source>
         <source path="C:\Users\ynabyl\Documents\GitHub\mv-scholarship\MvScholarshipsProject\MvScholarships\build\res\rs\debug" />
     </dataSet>
