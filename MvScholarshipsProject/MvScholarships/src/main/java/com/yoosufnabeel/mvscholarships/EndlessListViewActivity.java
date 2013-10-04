@@ -183,7 +183,7 @@ public class EndlessListViewActivity extends AbstractListViewActivity  {
         @Override
         protected void onPostExecute(Void result) {
 
-            currentPage = 0;
+            currentPage = 1;
             datasource = Datasource.getInstance(itemlist);
             setListAdapter(new ScholarshipAdapter(EndlessListViewActivity.this, R.layout.a_scholarship, datasource.getData(0, PAGESIZE)));
             getListView().removeFooterView(footerView);
